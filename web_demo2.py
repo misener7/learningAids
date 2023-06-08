@@ -8,8 +8,8 @@ from langchain.prompts.prompt import PromptTemplate
 from langchain.vectorstores import FAISS
 import sentence_transformers
 
-from chatllm import ChatLLM
-from chinese_text_splitter import ChineseTextSplitter
+from tool.chatllm import ChatLLM
+from tool.chinese_text_splitter import ChineseTextSplitter
 
 import torch
 LLM_DEVICE = "cuda" if torch.cuda.is_available(
